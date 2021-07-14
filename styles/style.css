@@ -2,7 +2,8 @@
     fonts
 ------------ */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 
 
 /* ----------------
@@ -56,4 +57,49 @@ header{
     margin-top: 153px;
     margin-right: 141px;
     margin-bottom: 86px;
+}
+
+/* --------------
+section
+-------------- */
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    grid-row-gap: 27px;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    
+}
+
+.player{
+    width: 330px;
+    height: 474px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2) ;
+    justify-content: center;
+    padding: 15px 15px 33px 15px;
+}
+
+.player-detail{
+    width: 300px;
+    padding: 0;
+    
+}
+
+
+.player-image{
+    width: 300px;
+    height: 256px;
+}
+
+.player-info p{
+    width: 100%;
+    color: #6C6C6C;
 }
