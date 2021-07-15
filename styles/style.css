@@ -66,12 +66,12 @@ header{
     background-color: #2D25A0;
 }
 
-.web-title-section{
+.banner-section{
     display: flex;
     
 }
 
-.web-title{
+.banner-title{
     font-size: 64px;
     line-height: 80px;
     width: 485px;
@@ -119,7 +119,7 @@ section
     border-radius: 2px;
     box-shadow: 1px 1px 10px rgb(230,230,230);
     margin: 10px auto;
-    /* padding-bottom: ; */
+    
     
 }
 
@@ -143,31 +143,10 @@ section
     margin: auto;
     color: #6C6C6C;
 }
-/* 
-.highlight-section{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-column-gap: 66px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 165px;
-    margin-left: 182px;
-    margin-right: 156px;
-    margin-bottom: 158px;
-    background-color: aquamarine;
-
-}
-.highlight-description{
-    width: 469px;
-    height: 309px;
-    /* margin: 66px 66px 66px 0; */
-    
-/* }
-.match img{
-    width: 567px;
-    height: 427px;
-    margin: 0;
-} */ 
+ 
+/* --------------
+sponsor
+-------------- */
 .sponsor-section{
     height: 474px;
     display: flex;
@@ -189,7 +168,9 @@ section
     margin-top: 60px;
     margin-left: 90px;
 }
-
+/* --------------
+footer
+-------------- */
 footer {
     display:flex;
     flex-direction: column;
@@ -197,22 +178,24 @@ footer {
     justify-content: center;
     align-items:center;
     margin-top: 70px;
-  }
-  footer img{
+}
+
+footer img{
     width:485px;
     height:110px;
-  }
+}
+
 .icon{
     display:inline;
     width:16px;
     height:13px;
     color:#969BAB;
     margin-right: 8px;
-  }
+}
   
   
 
-  /* -------------------------
+/* -------------------------
         Media Query
 ------------------------- */
 
@@ -225,41 +208,35 @@ footer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-
+    header{
+        width: auto;
+        height: auto;
+    }
     .web-title-section{
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(.8, 1fr);
 
-        transform: scaleX(.8);
+        transform: scale(.5,.5);
+        width: 80%;
+        margin-left: 0;
+        margin-top: 10px;
     }
-
-
-    /* .copa-text, .banner, .player{
-        width: 70%;
-    }
-    .row, .web-title-section{
-
-        /* display: flex;
-        flex-direction: column; */
-        /* display: grid;
-        grid-template-columns: repeat(1, fr); */
-        /* grid-row-gap: 27px; */
-        /* justify-content: center; */
-        
-} 
-.player{
-    padding: 15px;
-}
-
-/* --------------------
-        Tablet Devices
-      -------------------- */
-@media only screen and (min-width:689px) and (max-width:991px) {
-    .container{
+    .web-title{
         width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        padding-left: 0%;
     }
-    .players, .courses{
-        grid-template-columns: repeat(2, 1fr);
+    .player-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }    
+    .row{
+        display:flex;
+        flex-wrap: wrap;
+        width: 70%;
+        transform: scale(.9,.9);
     }
-}
-  
+} 
+
+
