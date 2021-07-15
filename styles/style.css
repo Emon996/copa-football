@@ -219,17 +219,22 @@ footer img{
         margin-left: 0;
         padding-left: 0%;
     }
-    .players-section{
+    .players-section, .sponsors, footer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }    
     .row{
+        
         display:flex;
         flex-wrap: wrap;
         width: 70%;
         transform: scale(.9,.9);
         margin-bottom: 16px;
     }
+    /* {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    } */
 } 
 
 
