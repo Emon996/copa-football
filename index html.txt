@@ -156,7 +156,7 @@
     
     </section>
 
-<!-- <section class="container">
+<section class="container">
     <div class="legends">
         <div class="legend">
             <img src="./images/pele_vaikqzc6pgm61ny6fyzpoamdf.jpg" alt="">
@@ -176,7 +176,7 @@
         </div>
     </div>
     </div>
-</section> -->
+</section>
 
     <section class="sponsor-section">
         <h2>Official Sponsors</h2>

@@ -68,6 +68,7 @@ header{
 
 .web-title-section{
     display: flex;
+    
 }
 
 .web-title{
@@ -219,20 +220,35 @@ footer {
         Mobile Devices
        -------------------- */
 @media only screen and (max-width:688px) {
-    header, .players-section, .sponsor-section, footer{
+    body{
         width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
-    .web-title-section, .copa-text, .banner, .player, .sponsor{
 
-        display: flex;
-        flex-direction: column;
+    .web-title-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        transform: scaleX(.8);
+    }
+
+
+    /* .copa-text, .banner, .player{
+        width: 70%;
+    }
+    .row, .web-title-section{
+
+        /* display: flex;
+        flex-direction: column; */
+        /* display: grid;
+        grid-template-columns: repeat(1, fr); */
+        /* grid-row-gap: 27px; */
+        /* justify-content: center; */
         
-        /* grid-template-columns: repeat(1, 1fr); */
-    }
-    /* .player, .blog{
-        flex-direction: column;
-    }
-     */
+} 
+.player{
+    padding: 15px;
 }
 
 /* --------------------
